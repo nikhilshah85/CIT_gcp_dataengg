@@ -1,0 +1,25 @@
+					Big Data Solution
+
+HDFS Cluster- for storage in form of datasets
+1. Storage 
+	cluster architecture was needed 
+		data protection
+		automatic back up of data, ie multiple copies
+
+	HDFS cluster
+
+MapReducer - for data managemnt
+2. MapReducer 
+	it is an algo which will manage, segegrate the data, index the data, and
+		make it available for analysis
+		internally it is already applying aggregation, sorting, grouping, 
+
+Yarn - UI based management console
+3. There are a lot of Nodes in a cluster
+   There is a need to manage the HDFS, storage (add, update, remove etc..)
+   Manage the access to data, to nodes, to cluster, manage roles and permissions, users, 
+		security like encryption and decryption etc...
+	you need an interface to manage the above 2 components
+	Thus you have the 3rd component - Yarn 
+		
+	all this 3 components are made available in 1 single framework - Hadoop
