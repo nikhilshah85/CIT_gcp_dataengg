@@ -1,0 +1,6 @@
+General Questions
+1. What is a cluster
+2. What is a node
+3. What is HDFS
+4. What is Mapreducer
+5. What is Yarn
