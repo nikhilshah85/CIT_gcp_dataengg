@@ -1,0 +1,8 @@
+1. sign in to gcp account
+2. generaral service
+3. VM - windows and Linux
+4. storage - buckets (this is a harddrive)
+	this is where ur unstructured or semi structured data can be placed
+	also excel files, csv, parquet, json, xml etc.. videos, 
+
+5. Introduction to Certified Google Professional Data Engg
