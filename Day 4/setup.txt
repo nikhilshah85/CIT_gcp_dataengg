@@ -1,0 +1,27 @@
+Primary components
+	Spark Core
+	Spark SQL
+	Spark streaming
+
+----------------------------------------
+Spark installation
+
+4 step process
+
+1. pre-requisite
+	a. install Java - configure env variables
+	b. install python - configure env variables
+	c. you need Hadoop folder which will have winutil.exe for windows operating system
+		you need a Hadoop\bin folder (anywhere in system, make sure the same path is applied in 
+			env variable)
+		which should have a winutil file
+
+
+	d. download spark from apache website - configure env variables
+	
+		below are the env variables
+		PYSPARK_HOME - value to point to python .exe (eg c:\python\python.exe)
+	SPARK_HOME - value to point to spark folder (eg. c:\spark, my spark is unzipped in c:\spark)
+	PYSPARK_DRIVER_HOME - python 
+
+	

@@ -1,0 +1,8 @@
+val rddFromFile = spark.sparkContext.textFile("C:/Users/nikhi/OneDrive/Desktop/Newfolder/input.csv")
+ val rdd = rddFromFile.map(f=>{
+    f.split(",")
+  })
+
+rdd.foreach(f=>{
+println("Col1:"+f(0)+",Col2:"+f(1))
+})

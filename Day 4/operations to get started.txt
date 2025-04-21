@@ -1,0 +1,11 @@
+
+1. read the content from C:/Users/nikhi/OneDrive/Desktop/Newfolder/Links.txt
+	and ptint everything in upper case
+2. read a CSV file and print first 2 columns from csv file
+
+3. read 2 csv files, combine the contents and print all the values
+
+4. read all the csv files from a folder (could be 50 files) and print first 2 columns
+
+
+

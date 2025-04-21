@@ -1,0 +1,4 @@
+val rdd3 = spark.sparkContext.textFile("C:/Users/nikhi/OneDrive/Desktop/Newfolder/*.csv")
+rdd3.foreach(f=>{
+  println(f)
+})

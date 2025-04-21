@@ -1,0 +1,35 @@
+1. Introduction to spark
+2. spark setup
+3. spark lab 
+-------------------------------------------------------------------
+we needed more faster system to analyze the data
+
+
+Hadoop -
+	works great on  Data blocks (pre-collected data, settled data)
+	not suitable for
+	live data / streaming data
+
+		we needed something to work on streaming, and needed more faster solution for data blocks
+
+
+	mapreduce function was not easy for everyone
+	we wanted something where sql like language or more easier language like scala and python can be used
+
+	Thus Apache made/re-wrote the architecture and came with Spark, execution is 100 times faster than
+	mapreduce
+	also scala and python are integrated internally 
+	also sql can be used further 
+
+	so we have 
+	scala environment if you want to use scala
+	pyspark for people knowing python
+	pysql for peple knowing sql 
+
+	we now also have spark integrated with google cloud in a service called dataproc
+
+
+
+
+
+	

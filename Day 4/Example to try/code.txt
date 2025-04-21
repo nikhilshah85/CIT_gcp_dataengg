@@ -1,0 +1,9 @@
+1.
+val x = sc.textFile("README.MD");
+val y = x.map(_.toUpperCase)
+y.take(5).foreach(println)
+
+2.
+val x = sc.textFile("C:/Users/nikhi/OneDrive/Desktop/GCP - CIT/Day 1/Links.txt");
+val y = x.map(_.toUpperCase)
+y.take(5).foreach(println)

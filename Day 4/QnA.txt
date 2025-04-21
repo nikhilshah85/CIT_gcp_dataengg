@@ -1,0 +1,17 @@
+1. What is big data ?
+2. What are 5V's of data
+3. explain the 5v's in detail
+4. difference between structured and unstructured data
+5. what is semi structure data
+6. what is Hadoop 
+7. what is cloud technology
+8. GCP 
+9. What is google shell / cloud shell 
+10. what are region and zone
+11. what is IAM in gcp 
+-----------------------------------------
+	Additional hunt questions
+what is SAAS
+What is PAAS
+What is IAAS
+What is IAC

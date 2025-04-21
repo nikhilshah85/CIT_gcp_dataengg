@@ -1,0 +1,106 @@
+1. Java 11 - I am sharing a java exe file - install this version and it works well - in teams
+2. create a folder Java in c drive 
+	copy all the files from C:\Program files\java to C:\Java
+3. Open env variable - configure 2 things
+	1. User variable (above section)	
+	JAVA_HOME C:\Java\jdk-11\bin
+
+	2. path variable (below section)
+	C:\Java\jdk-11\bin
+
+4. open cmd and check 
+	java --version 
+	where java 
+
+5. for Hadoop same way
+	a. create a folder in C (C:\hadoop)
+	
+	b. open Hadoop\etc\Hadoop\hadoop-env
+		you have to set the java path here in below format
+	@rem The java implementation to use.  Required. (Bin is not needed)
+	set JAVA_HOME=C:\Java\jdk-11
+
+6. we have to edit 4 files (in c:\hadoop\etc\hadoop)
+     a. core-site
+
+	<configuration>
+		<property>
+		<name>fs.defaultFS</name>
+		<value>hdfs://localhost:9000</value>
+		</property>
+	</configuration>
+
+     b. hdfs-site
+		<configuration>
+<property>
+<name>dfs.replication</name>
+<value>1</value>
+</property>
+<property>
+<name>dfs.namenode.name.dir</name>
+<value>C:\hadoop\data\namenode</value>
+</property>
+<property>
+<name>dfs.datanode.data.dir</name>
+<value>C:\hadoop\data\datanode</value>
+</property>
+</configuration>
+
+
+	c. mapred-site
+	<configuration>
+<property>
+<name>mapreduce.framework.name</name>
+<value>yarn</value>
+</property>
+</configuration>
+
+
+	d. yarn-site
+
+	<configuration>
+<property>
+<name>yarn.nodemanager.aux-services</name>
+<value>mapreduce_shuffle</value>
+</property>
+<property>
+<name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name>
+<value>org.apache.hadoop.mapred.ShuffleHandler</value>
+</property>
+</configuration>
+
+
+-----------
+this is all the setup - let us now test the installation
+
+1. open cmd as Administrator
+2. cd.. till you reach c:\
+3. cd Hadoop\sbin
+4. java --version 
+   Hadoop version
+5. start-dfs.cmd
+	this will start the hdfs data node cluster
+	localhost:9870 on browser 
+6. start-yarn.cmd
+	this is yarn - to manage nodes and other resources
+	localhost:8088
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+
