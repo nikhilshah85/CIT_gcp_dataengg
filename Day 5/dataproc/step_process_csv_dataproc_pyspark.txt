@@ -1,0 +1,35 @@
+Download Cloud SDK : https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
+
+gcloud --version
+
+gcloud init
+
+--------------------------------------------------------------------------------------------
+
+1. Create a new Bucket  - yourname-bucket - nikhilshah-bucket - **Name should be unique across gcp
+gsutil mb gs://nikhilshah-bucket/
+
+2. Upload data file in a folder called injection 
+gsutil cp C:/Users/nikhi/OneDrive/Desktop/Newfolder/0_input.csv gs://nikhilshah-bucket/injection/
+
+3. Upload Python script file (.py file which has code for spark)
+gsutil cp C:/Users/nikhi/OneDrive/Desktop/Newfolder/0_process_csv.py gs://nikhilshah-bucket/scripts/
+
+4. Create a new cluster - (observe the parameters like imagename,region,zone,singl-node / multimode etc..)
+gcloud dataproc clusters create training-cluster --region=us-central1 --zone=us-central1-a --single-node 
+    --master-machine-type=n1-standard-2 --image-version=2.0-debian10
+
+5. Execute spark job by submitting the .py file uploaded in step 3 
+gcloud dataproc jobs submit pyspark gs://nikhilshah-bucket/scripts/0_process_csv.py --cluster=training-cluster --region=us-central1
+
+
+6. Check the output 
+gsutil cp -r gs://nikhilshah-bucket/output/processed/part-00000-46c304ee-a443-438b-a1b5-c43daac31d93-c000.csv c:/
+
+
+7. Delete the cluster and other resources
+gcloud dataproc clusters delete training-cluster --region=us-central1
+
+
+
+------------------------

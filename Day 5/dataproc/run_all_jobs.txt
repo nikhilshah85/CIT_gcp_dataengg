@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# === CONFIG ===
+BUCKET_NAME="your-bucket-name"
+CLUSTER_NAME="your-cluster"
+REGION="your-region"
+LOCAL_DIR="gcp_dataproc_csv_examples"
+
+# === Create bucket if not exists ===
+if ! gsutil ls -b gs://$BUCKET_NAME >/dev/null 2>&1; then
+  echo "Creating bucket: $BUCKET_NAME"
+  gsutil mb -l $REGION gs://$BUCKET_NAME
+fi
+
+# === Upload input files and scripts ===
+echo "Uploading files to GCS..."
+gsutil -m cp $LOCAL_DIR/input/*.csv gs://$BUCKET_NAME/input/
+gsutil -m cp $LOCAL_DIR/scripts/*.py gs://$BUCKET_NAME/scripts/
+
+# === Submit jobs ===
+declare -a JOBS=("sales_aggregation.py" "clean_csv.py" "join_csv.py" "filter_date.py")
+
+for SCRIPT in "${JOBS[@]}"; do
+  echo "Submitting job: $SCRIPT"
+  gcloud dataproc jobs submit pyspark \
+    gs://$BUCKET_NAME/scripts/$SCRIPT \
+    --cluster=$CLUSTER_NAME \
+    --region=$REGION
+done
+
+echo "✅ All jobs submitted!"
