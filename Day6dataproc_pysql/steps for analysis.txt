@@ -1,0 +1,13 @@
+gsutil mb gs://nikhil-bucket-pysql/
+
+
+gsutil cp C:/Users/nikhi/OneDrive/Desktop/GCP/Day6dataproc_pysql/sales_data.csv gs://nikhil-bucket-pysql/injection/
+
+gsutil cp C:/Users/nikhi/OneDrive/Desktop/GCP/Day6dataproc_pysql/sales_csv_analysis.py gs://nikhil-bucket-pysql/scripts/
+
+gcloud dataproc clusters create training-cluster --region=us-central1 --zone=us-central1-a --single-node 
+--master-machine-type=n1-standard-2 --image-version=2.0-debian10
+
+
+gcloud dataproc jobs submit pyspark gs://nikhil-bucket-pysql/scripts/sales_csv_analysis.py --cluster=training-cluster --region=us-central1
+
