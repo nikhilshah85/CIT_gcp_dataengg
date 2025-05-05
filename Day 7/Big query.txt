@@ -1,0 +1,19 @@
+https://cloud.google.com/bigquery/docs/samples
+
+BigQuery's architecture is a serverless, decoupled storage and compute environment, enabling independent scaling of both resources. This allows for efficient and cost-effective data warehousing, particularly for large datasets. Key aspects of the architecture include: 
+1. Decoupled Storage and Compute:
+Storage:
+BigQuery utilizes a columnar storage format and compression algorithms to store data in Google's Colossus system. Colossus handles replication, recovery, and distributed management, ensuring data availability and reliability. 
+Compute:
+BigQuery employs Dremel, a powerful query engine, for processing data. This engine, along with Borg, a cluster management system, allocates compute resources and handles fault tolerance. 
+2. High-Speed Network:
+Google's high-speed network connects the storage and compute layers, facilitating efficient communication and data transfer. This allows for fast query processing and data analysis.
+3. Columnar Storage:
+BigQuery uses a columnar storage structure, which is highly efficient for running SQL queries on large datasets. This approach enables faster data retrieval and analysis.
+4. Scalability and Cost-Effectiveness:
+The serverless architecture allows for independent scaling of storage and compute resources, enabling users to manage their resources and costs effectively. 
+BigQuery automatically optimizes data partitioning and sharding, further improving query performance and reducing costs. 
+5. Data Management and Security:
+BigQuery provides features for data partitioning, clustering, and indexing to optimize query performance and reduce costs. 
+It also offers robust security measures to protect sensitive data. 
+In essence, BigQuery's architecture is designed to handle large-scale data processing tasks with speed, efficiency, and cost-effectiveness. By decoupling storage and compute, utilizing a columnar storage format, and leveraging Google's powerful infrastructure, BigQuery provides a robust platform for big data analytics. 

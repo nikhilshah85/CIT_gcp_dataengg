@@ -1,0 +1,15 @@
+Dataware house
+https://cloud.google.com/learn/what-is-a-data-warehouse?hl=en
+
+Bigquery
+https://cloud.google.com/bigquery/docs/introduction
+
+star schema
+http://www.rapid-business-intelligence-success.com/star-schema.html
+
+ 
+Snowfalke
+https://www.databricks.com/glossary/snowflake-schema
+
+both
+https://www.existbi.com/blog/star-snowflake-schemas-data-warehouse-examples/

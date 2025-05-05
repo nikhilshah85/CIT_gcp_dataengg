@@ -1,0 +1,57 @@
+1. Create a new CSV file with below columns 
+	EmployeeInfo.csv
+
+	Columns
+	EmpNo EmpName EmpDesignation Empsalary EmpDeptNo EmpIsPermenant
+						(DeptNo 10 or 20 or 30 or 40) 
+
+
+	add 20 records here
+
+
+	upload this file in a bucket
+
+
+2. create a new csv file customers with below columns
+	Customers.csv
+
+	CustId Name LastName ProductId City Balance IsActive 
+			     (1,2,3,4,5)
+	add 30 records here
+
+	upload this file to your google drive
+
+3. Create a new new cloud SQL Service - add a new MySQL Instance - tastInstance-yourname
+	add a new database WorkDB
+	it will have 2 tables
+
+	DeptInfo
+	DeptNo(PrimaryKey) DeptName DeptLocation 
+		add 4 records, deptNo 10,20, 30, 40
+
+	ProductDetails
+	PId(pKey) Pname pcategory pprice pisInStock
+	add 5 products (1,2,3,4,5)
+	 
+
+---------------------------------------------------------------------------------------
+4	create a new BigQuery Service which will have the dataset taskDS
+	Inject the data from both the files and both the tables
+		dataset will now have 4 tables
+
+5.  Create below queries in separate query files
+	equi join to get all the common records for Employee and Dept
+	equi join to get all the common records from Customers and Products
+	group by all the employees by deptNo,which will show how many employee works in every dept
+	
+	share the result link with me
+	
+
+		
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+Citibank is present in 80 countries
+	a. currency - INR
+	b. timezone - IST 
+
+	some countries are storing data in excel, some in CSV, json, xml, sql server, mongodb etc...
+
+		we need to collect data from all of them and put it in 1 single place
+
+	banks have different database in every country 
+
+
+-----------
+	BigQuery components
+ 1. we need a software which can connect / integrate data from anywhere
+	SQL Server ,MySQL
+	JSON file
+	CSV File
+	Buckets
+	Azure
+	AWS
+	Google drive
+	MongoDB
+	Spanner like services anywhere
+	IOT
+	streaming 
+		etc....
+
+2. after collection we will need to store them, thus we need a storage, which is dataware house
+
+3. Analyse the data in Visuals - pie charts, pivots etc...
+	
+	
+	
+
+
+
+
+
+
+		

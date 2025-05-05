@@ -1,0 +1,119 @@
+Data Process engg on GCP
+
+1. Injection  - different services and data formats
+2. Process - different services and data formats
+3. Store the output 
+4. Visualize the output 
+-----------------------------------
+	different service on google cloud
+
+
+python 
+SQL 
+
+Before cloud - this was on Premises 
+	it use to be using softwares
+
+	Hadoop -- 
+		HDFS cluster (Storage)
+		Mapreduces (Process)
+		Yarn 
+	To process this in more faster manner
+	Spark and Hive was introduced (Process and Storage)
+		PySpark (for python developers)
+		PySQL (for SQL Developers)
+------------------------
+	Problem - there was a lot of challenge to manintain the infrastructure
+
+	This set up was than taken to cloud
+
+	which turned out to be
+
+	-- Cloud Storage (can store data instead of HDFS cluster)
+	-- dataproc (Hadoop with spark) - submit pyspark and pysql jobs
+		injest the data
+		process the data
+		store the data
+		
+	Good thing 
+		it is a cluster environment - so no need to worry about execution - Scalability 
+		can pick the data from anywhere
+		can store the data in anywhere
+		can work with any format of data
+	Sad thing
+		did not had its own storage (like HDFS in Hadoop)
+		engginer needs to know some language like python
+		missing UI to get the data and store the data
+		missing visualization integration 
+
+-------
+	Thus we had a better service then which solves all the above problems
+	BigQuery
+		has its own storage (Dataware house)
+		can process the data - clean the data, calculate, format, validate etc...
+		can store the data with itself as well as at other places
+		visualization (Looker)
+
+------------------------------------------------------------
+
+
+1. Injection  - different services and data formats
+		 (bucket) CSV Files,JSON,Avro, Parquet, SQL (RDBMS)
+		 Cloud SQL
+			MySQL
+			SQL Server
+			Postgres
+		 Cloud Spanner
+		
+		 PubSub (this is not a database - messageing service)
+		 FireStore / Datastore - NoSQL storage
+		 AlloyDB - Postgres (RDBMS)
+		
+		
+2. Process - different services and data formats
+3. Store the output 
+4. Visualize the output 
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+

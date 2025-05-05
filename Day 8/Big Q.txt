@@ -1,0 +1,66 @@
+Compute
+
+1. Storage - buckets - 
+2. RDBMS - Cloud SQL  - MySQL - SQL Server - Postgres
+3. ETL operations - by running Jobs - Python and Pyspark - scala 
+	When we have big data in picture 
+	Dataproc - Hadoop and Spark 
+4. Cloud Spanner 
+---------------------------------------------------------------------------------------
+	Challenges - 
+		a. create and maintain 4 separate services from above
+			different billing - repeated IAM -- repeated security -- etc....
+		b. visualization  ?
+		c. dependency on python / any other language
+
+
+	----
+		what Google provides us with is 
+			all of this in 1 single - stronger service 
+
+		want to get data from Azure / AWS etc...not by writing the code - why not wizard
+
+		super great service integrated - Looker - for visuals - live 
+--------------------------------------------	BigQuery
+
+
+		BigQuery Service (like a MySQL Server installed on your machine)
+			Dataware House (this is an Analytical Database used for analysis, not suitable for transactions)
+				Dataset
+					Tables
+					Views
+
+----------------------------------------------------------------------------------------
+		Dataware house - Huge database (in TB's and PB's) - data is stored for analysis purpose in a systematic way
+	we do not perform insert, update or delete here on table, just fire SQL like queries and get the data, store the data, visualize the data
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		

@@ -1,0 +1,38 @@
+						Dataware House
+
+
+
+--Facts
+	No contraints - (expect primary key)
+	No CRUD - insert, update and delete
+	No Normalization but do a denormalization
+
+	To do a denormalization we have techniques called as Schema technically
+
+		-- Star schema  (this for mid complex level of data warehouse)
+		-- Snowflake schema (for very large business and more complex system)
+
+	No OLTP - This is OLAP 
+	Databases had 2 dimention table - rows and cols
+
+	2 types of tables exists here
+		Dim (dimention) - 
+		Fact (Fact - actual) - 
+		
+		Dim are the master tables (new data rarely gets generated)
+			dimDept
+			dimPersonalInfo
+			dimCurrency
+			dimRegion
+		
+		Fact are the parent table - where new data gets generated every second
+
+
+
+-- is made up of 
+    Dataset	
+	Tables
+
+
+
+

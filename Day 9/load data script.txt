@@ -1,0 +1,15 @@
+LOAD DATA OVERWRITE BankingDS.FactTransaction
+(
+  CustomerId INT64,
+  CurrencyId int64,,
+  BranchId int64,
+  RegionID int64,
+  TransactionID int64,
+  Amount int64
+  
+)
+FROM FILES (
+  format = 'CSV',
+  uris = ['gs://nikhil-dp-storage/Banking/factData.csv'],
+  skip_leading_rows = 1
+);
