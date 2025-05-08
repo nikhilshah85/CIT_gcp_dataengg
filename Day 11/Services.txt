@@ -1,0 +1,24 @@
+RDBMS - Structured data
+	Cloud SQL
+		MySQL
+		SQL Server
+		PostGres
+	Spanner
+	AlloyDB (Postgres)
+
+NoSQL
+	Datastore  which is now renamed with better options and improved arch
+	Firestore
+
+	-------------------------------------------------------------------------------------------
+	RDBMS			NoSQL
+	Database		Database
+	Tables			Collections
+	(Records)Rows / Columns	Document
+	Primary key		DocumentID
+	SQL 			Functions (eg. add() to insert a new document)
+	you have a fix schema   Not necessary to have a fix schema
+	used for a established	used for startups where you 
+		projects
+
+		 

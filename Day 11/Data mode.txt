@@ -1,0 +1,34 @@
+
+
+
+			ICICI ATM - Transaction
+
+
+	somebody does an transaction using ATM card 
+
+
+		Transaction information - like which card, card activity, all details is to be shared by ATM
+Batch Mode
+	ATM can save all the details locally in a disk in a machine and end of the day it will share it
+	This is an example of Batch process
+		Data can be stored in 
+		SQL 
+		NoSQL
+		CSV File, JSON file, parquet, Avro, excel, txt, .bat,  etc.....
+
+Stream Mode
+	ATM machine is monitored / viewed by some software (dataflow, big query) and live - on the spot the details are been shared with the software (on prem - Apache beam - on cloud - data flow)
+
+		This is an example of Stream 
+
+		IOT devises
+		PUB SUB 
+		Video Streaming - cameras 
+		Live Tracker 
+
+
+
+
+
+
+
