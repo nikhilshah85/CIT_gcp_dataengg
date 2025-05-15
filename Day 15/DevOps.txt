@@ -1,0 +1,45 @@
+1. Automation 
+---------------------------------------------------------------------
+		   					(Cloud Build)
+		   Push                                   (CI)                                (CD)
+	Developer -----> Repository --> Testing -------> Build ----------> Artifact -------> Release
+							(as per different env)		   (Production)
+								(10-15 builds)			GCP
+			(storage)								AWS
+			GitHub									Azure
+			Bitbucket								Kubernetes
+			TFS (Teams foundation services)						
+			Cloud Repositories
+		
+
+
+			DevOps(Terminilogy) which also can store the files, folders  	
+----------------------------------------------------------------------------------------------------------			There are 2 approaches to achive it
+
+1. Manually configure this and test it
+2. .yml file - (Infrastructure as a code ) - IaC
+		just submit the yaml file to pipeline and it will take care of everything
+		
+To use yaml file, we have to use the format and language as per gcp (keywords, formats, jargons etc)
+using this file you can deploy your resources only to GCP
+
+
+but if you have to execute this pipeline on different environment(Azure AWS etc...) 
+you use a template and can execute that template from any platform (GCP Azure AWS) - Terraform
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
