@@ -1,0 +1,73 @@
+					Global Sales Analysis
+
+Design an ETL Pipeline to analyse the sales across different countries
+
+Create a project for Sales analysis and give a forecasting for next month so management can take decisions for production of goods
+
+An organization has offices in 8 countries and been selling various products through offices and partners
+
+Organization has 5 categories of products and each category has 6 products each
+Below are the categories
+Tshirts, Jeans, Shoes, Smart Phone, Perfumes, Water bottles.
+
+We collect their sales data every day through various Below sources
+
+India - data is collected in SQL Server instance 
+Japan - data in collected in an csv file in a storage bucket
+Norway - data is collected in Postgres SQl in AlloyDB service
+Sri Lanka - data is collected in JSON file in storage bucket (different bucket, not the same as Japan)
+HongKong - data is collected in excel file 
+
+Oman, Germany and Qatar we collect data in MySQL Instance - in 3 different databases
+------------------------------------------------------------------------------------------------
+
+
+We need to clean the data, transform the data, calculate and collate the data in 1 single storage - you can choose to store the data in a single format at 1 place
+
+-----------------------------------------------------------------------------------------
+
+data from different countries comes in different formats (in English for our project purpose but in real it can come in different languages)
+
+Below is the format we gave to offices to send us the data
+
+SaleId Category Product Qty Sale
+
+-----------------------------------------------------------------
+You will prepare the data for 8 different countries, 200 records per source
+Data will be in every countries own format for currency eg. Hongkong - store in HKD i.e 10.93
+Keep price for every product between 500 and 1200
+so when for India - Tshirt is 500rs it will be stored as 500/10.93 in data coming from Hongkon and similar for all the countries
+-----------------------------------------------------------------------
+Data may also contain null values
+-----------------------------------------------------------------------
+Final table will have all the data in INR format and without null values
+------------------------------------------------------------------------
+
+
+Analysis 
+
+A.
+1 of the stake holder needs to know the total qty of every product sold, we need to give him a google cloud link which will have PId, Pname, PCategory, QtySold, Price, Amount
+	Give an excel/csv file link the owner will analyse the data himself
+
+B. 1 of the stake holder wants to see the graphical presentation of various types based on category, country, etc...
+
+C. Tax department needs to get the visuals and tables for tax payments, thus they need to see the sales
+	countrywise, product wise, category wise, along with the tax value (consider 5%tax on every sale)
+
+d. Plan some charts on your own which can be useful for various groups
+
+e. Use single them for all the charts, use image of the some organization for and copyright information on the charts
+
+
+
+
+
+
+
+
+
+
+
+
+
